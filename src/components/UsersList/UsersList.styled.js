@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 
 export const List = styled.ul`
-  height: 600px;
+  max-height: 600px;
   overflow-y: scroll;
   padding-right: 20px;
   margin-bottom: 25px;

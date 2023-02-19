@@ -1,6 +1,6 @@
-import { actionsOnUser } from 'constance';
-import { Action, StyledWrapper } from './ListHeader.stylrd';
-import Wrapper from 'components/Reusable Components/Wrapper';
+import { actionsOnUser } from 'constants/constants ';
+import { Action, StyledWrapper } from './ListHeader.styled';
+import Wrapper from 'components/Wrapper/Wrapper';
 import { BsSortDown, BsSortUpAlt } from 'react-icons/bs';
 import { IconButton } from '@mui/material';
 
@@ -10,11 +10,11 @@ const ListHeader = ({ onBtnClick, sortOrder }) => {
       <Wrapper justifyContent="start">
         <p>User Name</p>
         <IconButton type="button" onClick={onBtnClick}>
-          {sortOrder ? <BsSortDown></BsSortDown> : <BsSortUpAlt></BsSortUpAlt>}
+          {sortOrder ? <BsSortDown /> : <BsSortUpAlt />}
         </IconButton>
       </Wrapper>
-      {actionsOnUser.map((action, index) => (
-        <Action key={index}>{action}</Action>
+      {actionsOnUser.map(({ id, name }) => (
+        <Action key={id}>{name}</Action>
       ))}
     </StyledWrapper>
   );

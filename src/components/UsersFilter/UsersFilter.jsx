@@ -19,7 +19,7 @@ const UsersFilter = ({ onChange }) => {
         ),
         disableUnderline: true,
       }}
-    ></StyledInput>
+    />
   );
 };
 

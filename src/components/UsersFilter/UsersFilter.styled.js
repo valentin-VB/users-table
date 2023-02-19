@@ -8,6 +8,7 @@ export const StyledInput = styled(TextField)({
     paddingBottom: '15px',
     backgroundColor: '#F3F3F3',
     paddingLeft: '20px',
+    marginLeft: '10px',
   },
 
   '& ::placeholder': {

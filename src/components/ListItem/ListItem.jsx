@@ -1,5 +1,5 @@
-import Wrapper from 'components/Reusable Components/Wrapper';
-import { actionsOnUser } from 'constance';
+import Wrapper from 'components/Wrapper/Wrapper';
+import { actionsOnUser } from 'constants/constants ';
 import { Circle, GridContainer, ListEl } from './ListItem.styled';
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 import { IconButton } from '@mui/material';
@@ -13,8 +13,8 @@ const ListItem = ({ user }) => {
           <Circle />
           <p>{user.name}</p>
         </Wrapper>
-        {actionsOnUser.map((action, index) => (
-          <input key={index} type="checkbox" name={action}></input>
+        {actionsOnUser.map(({ id, name }) => (
+          <input key={id} type="checkbox" name={name}></input>
         ))}
         <IconButton>
           <MoreHorizIcon />

@@ -1,5 +1,5 @@
 import { Container, Typography } from '@mui/material';
-import UsersDashbord from 'components/UsersDashbord/UsersDashbord';
+import UsersDashboard from 'components/UsersDashboard/UsersDashboard';
 
 export const App = () => {
   return (
@@ -8,10 +8,10 @@ export const App = () => {
         <Typography variant="h3" sx={{ mb: '15px' }}>
           Permissions
         </Typography>
-        <Typography variant="h6" sx={{ color: '#9F9F9F', mb: '30px' }}>
+        <Typography sx={{ color: '#9F9F9F', mb: '30px', fontSize: '25px' }}>
           Create and customize rules for your interface
         </Typography>
-        <UsersDashbord />
+        <UsersDashboard />
       </Container>
     </main>
   );
