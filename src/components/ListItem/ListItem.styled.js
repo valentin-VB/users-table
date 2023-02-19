@@ -1,25 +1,29 @@
 import styled from '@emotion/styled';
 
+export const GridContainer = styled.div`
+  display: grid;
+  grid-template-columns: 6fr 1fr 1fr 1fr 1fr 1fr;
+
+  input {
+    width: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+`;
+
 export const ListEl = styled.li`
   border: 1px solid #9f9f9f;
-  padding: 15px 15px;
+  padding: 4px 12px;
   border-radius: 6px;
   :not(:last-child) {
-    margin-bottom: 10px;
+    margin-bottom: 6px;
   }
 `;
 
 export const Circle = styled.div`
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   background-color: #3f3f3f;
   border-radius: 50%;
-  margin-right: 15px;
-`;
-
-export const InputsWrapper = styled.div`
-  margin-left: 25px;
-  input:not(:last-child) {
-    margin-right: 50px;
-  }
+  margin-right: 5px;
 `;

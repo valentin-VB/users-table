@@ -1,12 +1,13 @@
 import ListItem from 'components/ListItem/ListItem';
+import { List } from 'components/UsersList/UsersList.styled';
 
 const UsersList = ({ users }) => {
   return (
-    <ul>
+    <List>
       {users.map(user => (
         <ListItem key={user.id} user={user} />
       ))}
-    </ul>
+    </List>
   );
 };
 

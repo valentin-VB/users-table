@@ -7,17 +7,15 @@ import { IconButton } from '@mui/material';
 const ListHeader = ({ onBtnClick, sortOrder }) => {
   return (
     <StyledWrapper>
-      <Wrapper>
+      <Wrapper justifyContent="start">
         <p>User Name</p>
         <IconButton type="button" onClick={onBtnClick}>
           {sortOrder ? <BsSortDown></BsSortDown> : <BsSortUpAlt></BsSortUpAlt>}
         </IconButton>
       </Wrapper>
-      <Wrapper justifyContent="space-between">
-        {actionsOnUser.map((action, index) => (
-          <Action key={index}>{action}</Action>
-        ))}
-      </Wrapper>
+      {actionsOnUser.map((action, index) => (
+        <Action key={index}>{action}</Action>
+      ))}
     </StyledWrapper>
   );
 };
