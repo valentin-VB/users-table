@@ -3,9 +3,11 @@ import styled from '@emotion/styled';
 export const GridContainer = styled.div`
   display: grid;
   grid-template-columns: 6fr 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
 
   input {
-    width: 20px;
+    width: 18px;
+    height: 18px;
     margin-left: auto;
     margin-right: auto;
   }
