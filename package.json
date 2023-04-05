@@ -1,8 +1,8 @@
 {
-  "name": "react-test-task",
+  "name": "users-table",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://valentin-vb.github.io/React-test-task/",
+  "homepage": "https://valentin-vb.github.io/users-table/",
   "dependencies": {
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
